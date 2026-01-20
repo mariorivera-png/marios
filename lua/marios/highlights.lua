@@ -8,7 +8,7 @@ function M.setup()
 	vim.o.termguicolors = true
     vim.g.colors_name = "marios"
 
-	local c = require("marios.colors").setup()
+	local c = require("marios.colors")
 	local highlights = {
 		-- Base
 		Normal = { fg = c.fg, bg = c.bg },
