@@ -6,7 +6,7 @@ function M.setup()
 		vim.cmd("syntax reset")
 	end
 	vim.o.termguicolors = true
-    vim.g.colors_name = "marios"
+	vim.g.colors_name = "marios"
 
 	local c = require("marios.colors")
 	local highlights = {
@@ -52,12 +52,12 @@ function M.setup()
 		-- UI Elements
 		ColorColumn = { bg = c.gray },
 		Cursor = { fg = c.bg, bg = c.fg },
-		CursorLine = { bg = "none" },
-		CursorColumn = { bg = "none" },
+		CursorLine = { bg = c.Dgray },
+		CursorColumn = { bg = c.Dgray },
 		CursorLineNr = { fg = c.yellow, bold = true },
 		LineNr = { fg = c.gray },
-		SignColumn = { bg = c.bg },
-		StatusLine = { fg = c.fg, bg = c.gray },
+		SignColumn = { bg = c.Dgray },
+		StatusLine = { fg = c.fg, bg = c.Dgray },
 		StatusLineNC = { fg = c.gray, bg = c.bg },
 		VertSplit = { fg = c.gray },
 		WinSeparator = { fg = c.gray },
@@ -68,10 +68,14 @@ function M.setup()
 		TabLine = { fg = c.gray, bg = c.bg },
 		TabLineFill = { bg = c.bg },
 		TabLineSel = { fg = c.fg, bg = c.blue },
-		Visual = { bg = c.gray },
+		Visual = { bg = c.Dgray },
 		Search = { fg = c.bg, bg = c.yellow },
 		IncSearch = { fg = c.bg, bg = c.cyan },
 		MatchParen = { fg = c.yellow, bold = true },
+		DashboardHeader = { fg = c.red, bg = "none" },
+		DashboardDesc = { fg = c.blue },
+		DashboardIcon = { fg = c.blue },
+		DashboardShortCut = { fg = c.cyan },
 		-- Diagnostics
 		DiagnosticError = { fg = c.red },
 		DiagnosticWarn = { fg = c.yellow },
