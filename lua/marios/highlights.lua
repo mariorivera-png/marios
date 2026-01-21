@@ -57,7 +57,7 @@ function M.setup()
 		CursorLineNr = { fg = c.yellow, bold = true },
 		LineNr = { fg = c.gray },
 		SignColumn = { bg = c.Dgray },
-		StatusLine = { fg = c.fg, bg = c.Dgray },
+		StatusLine = { fg = c.fg, bg = "none" },
 		StatusLineNC = { fg = c.gray, bg = c.bg },
 		VertSplit = { fg = c.gray },
 		WinSeparator = { fg = c.gray },
