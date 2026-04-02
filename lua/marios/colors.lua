@@ -1,6 +1,7 @@
 return {
 	white = "#ffffff",
 	bg = "none",
+	bg_highlight = "#606060",
 	fg = "#f9f9f9",
 	red = "#ff0080",
 	green = "#79ff0f",
@@ -13,6 +14,5 @@ return {
 	Dgray = "#202020",
 	gray = "#404040",
 	orange = "#ffa600",
-
 	Agray = "#000000bb",
 }

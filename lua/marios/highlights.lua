@@ -68,7 +68,7 @@ function M.setup()
 		TabLine = { fg = c.Lgray, bg = c.bg },
 		TabLineFill = { bg = c.bg },
 		TabLineSel = { fg = c.fg, bg = c.blue },
-		Visual = { bg = c.Dgrey },
+		Visual = { bg = c.bg_highlight },
 		Search = { fg = c.bg, bg = c.yellow },
 		IncSearch = { fg = c.bg, bg = c.cyan },
 		MatchParen = { fg = c.yellow, bold = true },
@@ -114,9 +114,9 @@ function M.setup()
 		["@tag.delimiter"] = { fg = c.fg },
 	}
 
-	for group, settings in pairs(highlights) do
-		vim.api.nvim_set_hl(0, group, settings)
-	end
+	--	for group, settings in pairs(highlights) do
+	--		vim.api.nvim_set_hl(0, group, settings)
+	--	end
 end
 
 return M
