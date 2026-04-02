@@ -49,38 +49,6 @@ function M.setup()
 		Ignore = { fg = c.Lgray },
 		Error = { fg = c.red, bold = true },
 		Todo = { fg = c.yellow, bold = true },
-		-- lualine
-		normal = {
-			a = { bg = c.gray, fg = c.bg, gui = "bold" },
-			b = { bg = c.Lgray, fg = c.white },
-			c = { bg = c.Dgray, fg = c.gray },
-		},
-		insert = {
-			a = { bg = c.blue, fg = c.bg, gui = "bold" },
-			b = { bg = c.Lgray, fg = c.white },
-			c = { bg = c.Lgray, fg = c.white },
-		},
-		visual = {
-			a = { bg = c.yellow, fg = c.bg, gui = "bold" },
-			b = { bg = c.Lgray, fg = c.white },
-			c = { bg = c.inactivegray, fg = c.bg },
-		},
-		replace = {
-			a = { bg = c.red, fg = c.bg, gui = "bold" },
-			b = { bg = c.Lgray, fg = c.white },
-			c = { bg = c.bg, fg = c.white },
-		},
-		command = {
-			a = { bg = c.green, fg = c.bg, gui = "bold" },
-			b = { bg = c.Lgray, fg = c.white },
-			c = { bg = c.inactivegray, fg = c.bg },
-		},
-		inactive = {
-			a = { bg = c.Dgray, fg = c.gray, gui = "bold" },
-			b = { bg = c.Dgray, fg = c.gray },
-			c = { bg = c.Dgray, fg = c.gray },
-		},
-
 		-- UI Elements
 		ColorColumn = { bg = c.Lgray },
 		Cursor = { fg = c.bg, bg = c.fg },
