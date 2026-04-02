@@ -10,8 +10,8 @@ return {
 	pink = "#ff80eb",
 	cyan = "#00c8ff",
 	Lgray = "#b9b9b9",
-	Dgray = "#555555",
-	gray = "#969696",
+	Dgray = "#202020",
+	gray = "#404040",
 	orange = "#ffa600",
 
 	Agray = "#000000bb",
