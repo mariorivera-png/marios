@@ -11,7 +11,7 @@ function M.setup()
 	local c = require("marios.colors")
 	local highlights = {
 		-- Base
-		Normal = { fg = c.fg, bg = not c.bg and c.gray or "NONE" },
+		Normal = { fg = c.fg, bg = c.bg, bg_selected = c.gray },
 		NormalFloat = { fg = c.fg, bg = c.bg },
 		NormalNC = { fg = c.fg, bg = c.bg },
 		Comment = { fg = c.Lgray, italic = true },
