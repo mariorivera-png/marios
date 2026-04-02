@@ -11,7 +11,7 @@ function M.setup()
 	local c = require("marios.colors")
 	local highlights = {
 		-- Base
-		Normal = { fg = c.fg, bg = c.bg, bg_selected = c.gray },
+		Normal = { fg = c.fg, bg = c.bg },
 		NormalFloat = { fg = c.fg, bg = c.bg },
 		NormalNC = { fg = c.fg, bg = c.bg },
 		Comment = { fg = c.Lgray, italic = true },
@@ -69,6 +69,8 @@ function M.setup()
 		TabLineFill = { bg = c.bg },
 		TabLineSel = { fg = c.fg, bg = c.blue },
 		Visual = { bg = c.bg_highlight },
+		VisualNOS = { bg = c.bg_highlight },
+		Select = { bg = c.bg_highlight },
 		Search = { fg = c.bg, bg = c.yellow },
 		IncSearch = { fg = c.bg, bg = c.cyan },
 		MatchParen = { fg = c.yellow, bold = true },
@@ -114,9 +116,9 @@ function M.setup()
 		["@tag.delimiter"] = { fg = c.fg },
 	}
 
-	--	for group, settings in pairs(highlights) do
-	--		vim.api.nvim_set_hl(0, group, settings)
-	--	end
+	for group, settings in pairs(highlights) do
+		vim.api.nvim_set_hl(0, group, settings)
+	end
 end
 
 return M
