@@ -8,6 +8,8 @@ return {
 	magenta = "#b449be",
 	cyan = "#00c8ff",
 	Lgray = "#bbbbbb",
-	Dgrey = "#414141",
+	Dgray = "#414141",
 	orange = "#ffa600",
+
+	Agray = "#000000bb",
 }
