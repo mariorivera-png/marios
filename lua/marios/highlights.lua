@@ -1,20 +1,4 @@
 local M = {}
-local mode_to_highlight = {
-	["VISUAL"] = "_visual",
-	["V-BLOCK"] = "_visual",
-	["V-LINE"] = "_visual",
-	["SELECT"] = "_visual",
-	["S-LINE"] = "_visual",
-	["S-BLOCK"] = "_visual",
-	["REPLACE"] = "_replace",
-	["V-REPLACE"] = "_replace",
-	["INSERT"] = "_insert",
-	["COMMAND"] = "_command",
-	["EX"] = "_command",
-	["MORE"] = "_command",
-	["CONFIRM"] = "_command",
-	["TERMINAL"] = "_terminal",
-}
 
 function M.setup()
 	vim.cmd("hi clear")
@@ -66,16 +50,16 @@ function M.setup()
 		Error = { fg = c.red, bold = true },
 		Todo = { fg = c.yellow, bold = true },
 		-- lualine
-		command = { a = { fg = c.Agray, bg = c.yellow, gui = "bold" } },
-		insert = { a = { fg = c.Agray, bg = c.blue, gui = "bold" } },
-		visual = { a = { fg = c.Agray, bg = c.purple, gui = "bold" } },
-		terminal = { a = { fg = c.Agray, bg = c.cyan, gui = "bold" } },
-		replace = { a = { fg = c.Agray, bg = c.red1, gui = "bold" } },
-		inactive = {
-			a = { fg = c.gray1, bg = c.Agray, gui = "bold" },
-			b = { fg = c.gray1, bg = c.Agray },
-			c = { fg = c.gray1, bg = c.gray2 },
-		},
+		-- command = { a = { fg = c.red, bg = c.Agray, gui = "bold" } },
+		-- insert = { a = { fg = c.green, bg = c.Agray, gui = "bold" } },
+		-- visual = { a = { fg = c.purple, bg = c.Agray, gui = "bold" } },
+		-- terminal = { a = { fg = c.cyan, bg = c.Agray, gui = "bold" } },
+		-- replace = { a = { fg = c.orange, bg = c.Agray, gui = "bold" } },
+		-- inactive = {
+		-- 	a = { fg = c.gray1, bg = c.Agray, gui = "bold" },
+		-- 	b = { fg = c.gray1, bg = c.Agray },
+		-- 	c = { fg = c.gray1, bg = c.gray2 },
+		-- },
 
 		-- UI Elements
 		ColorColumn = { bg = c.Lgray },
