@@ -11,7 +11,7 @@ function M.setup()
 	local c = require("marios.colors")
 	local highlights = {
 		-- Base
-		Normal = { fg = c.fg, bg = c.bg },
+		Normal = { fg = c.fg, bg = c.Dgray },
 		NormalFloat = { fg = c.fg, bg = c.bg },
 		NormalNC = { fg = c.fg, bg = c.bg },
 		Comment = { fg = c.Lgray, italic = true },
@@ -51,8 +51,8 @@ function M.setup()
 		Todo = { fg = c.yellow, bold = true },
 		-- UI Elements
 		ColorColumn = { bg = c.Lgray },
-		Cursor = { fg = c.bg, bg = c.fg },
-		CursorLine = { bg = "none" },
+		Cursor = { fg = c.white, bg = c.fg },
+		CursorLine = { bg = c.Dgray },
 		CursorColumn = { bg = c.Dgrey },
 		CursorLineNr = { fg = c.yellow, bold = true },
 		LineNr = { fg = c.Lgray },
@@ -61,7 +61,7 @@ function M.setup()
 		StatusLineNC = { fg = c.Lgray, bg = c.bg },
 		VertSplit = { fg = c.Lgray },
 		WinSeparator = { fg = c.Lgray },
-		Pmenu = { fg = c.fg, bg = c.Lgray },
+		Pmenu = { fg = c.fg, bg = c.Dgray },
 		PmenuSel = { fg = c.bg, bg = c.blue },
 		PmenuSbar = { bg = c.Lgray },
 		PmenuThumb = { bg = c.fg },
